@@ -1,7 +1,6 @@
-return {
-    name = "Fonts",
-    description = "More convenient font creation.",
-    version = "1.0.0",
-    author = "PrikolMen:-b",
-    license = "MIT"
-}
+Name = "Fonts"
+Description = "More convenient font creation."
+
+Author = "PrikolMen:-b"
+Version = "1.0.0"
+License = "MIT"
