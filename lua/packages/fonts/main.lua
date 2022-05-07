@@ -2,6 +2,8 @@ if (SERVER) then
     return
 end
 
+local logger = GPM.Logger( "Fonts" )
+
 module( "fonts", package.seeall )
 
 local list = {}
@@ -114,7 +116,7 @@ do
                     ["font"] = font
                 })
 
-                console.log( "Registed: ", registerName ):setTag( "Fonts" )
+                logger:debug( "Registed: {1}", registerName )
             end
         end
 
@@ -138,15 +140,15 @@ end
 
 function RegisterAll()
     if (table.Count( list ) > 0) then
-        console.log( "Registration ~ Started" ):setTag( "Fonts" )
+        logger:debug( "Registration ~ Started" )
 
         for name, font in pairs( list ) do
             font:Register()
         end
 
-        console.log( "Registration ~ Finished" ):setTag( "Fonts" )
+        logger:debug( "Registration ~ Finished" )
     else
-        console.log( "Registration ~ No Fonts" ):setTag( "Fonts" )
+        logger:debug( "Registration ~ No Fonts" )
     end
 end
 
