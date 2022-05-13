@@ -161,4 +161,4 @@ end
 
 hook.Add( "OnScreenSizeChanged", "GPM.Fonts", RegisterAll )
 hook.Add( "InitPostEntity", "GPM.Fonts", RegisterAll )
-hook.Add( "GameReady", "GPM.Fonts", RegisterAll )
+hook.Add( "OnGameReady", "GPM.Fonts", RegisterAll )
