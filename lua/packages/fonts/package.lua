@@ -6,5 +6,6 @@ Version = "1.1.2"
 License = "MIT"
 
 Dependencies = {
-    ["Game Ready"] = ">=1.6.0"
+    ["Game Ready"] = ">=1.6.0",
+    ["Base Extensions"] = ">=2.7.0"
 }
